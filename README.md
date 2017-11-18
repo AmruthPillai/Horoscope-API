@@ -1,6 +1,8 @@
 # Horoscope API
 A RESTful API that scrapes the internet to get your horoscope reading.
 
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
 ---
 
 **API Endpoint:** https://astro-horoscope-api.herokuapp.com/
