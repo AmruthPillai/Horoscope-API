@@ -5,8 +5,8 @@ const app     = express();
 
 app.get('/', function(req, res) {
 
-  let date = req.query.date;
-  let sign = req.query.sign;
+  let date = req.query.date.toLowerCase();
+  let sign = req.query.sign.toLowerCase();
 
   let url = 'https://www.astrology.com/horoscope/daily/' + date + '/' + sign + '.html';
 
@@ -14,6 +14,7 @@ app.get('/', function(req, res) {
   // The first parameter is our URL
   // The callback function takes 3 parameters, an error, response status code and the html
   request(url, function(error, response, html) {
+
     // First we'll check to make sure no errors occurred when making the request
     if (!error) {
 
@@ -35,11 +36,12 @@ app.get('/', function(req, res) {
       // Send the JSON as a response to the client
       res.send(json);
     }
+
   });
 
 });
 
 app.listen('8080');
-console.log('API is running on port 8080');
+console.log('Horoscope API is running on http://localhost:8080');
 
 module.exports = app;
