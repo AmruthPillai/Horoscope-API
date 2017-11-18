@@ -1,0 +1,13 @@
+{
+  "name": "Horoscope API",
+  "description": "A RESTful API that scrapes the internet to get you today's horoscope reading.",
+  "repository": "https://github.com/AmruthPillai/Horoscope-API",
+  "logo": "",
+  "keywords": [
+    "horoscope",
+    "astrology",
+    "restful",
+    "api",
+    "nodejs"
+  ],
+}
