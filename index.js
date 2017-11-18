@@ -41,7 +41,5 @@ app.get('/', function(req, res) {
 
 });
 
-app.listen('8080');
-console.log('Horoscope API is running on http://localhost:8080');
-
+app.listen('80');
 module.exports = app;
